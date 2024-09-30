@@ -17,7 +17,8 @@ This project is a REST API built with Go Fiber for file uploading, URL generatio
 - **Go Fiber** for the web framework
 - **PostgreSQL** for the database (via GORM)
 - **Cloudinary** for file storage
-- **Go Routine** for concurrency
+- **Go Routine** for concurrency, improving performance and speed
+- **Channels** for communication between goroutines
 - **Cron Jobs** for periodic tasks
 - **Rate Limiting**, **Helmet** for security
 - **Fiber Middlewares** (CORS, Logger, Cache, Monitor)
@@ -107,6 +108,12 @@ The cron job runs every hour and deletes files that have expired after 2 hours.
 
 ---
 
+## Go Routines and Channels
+
+To enhance the performance of the API, Go routines are utilized for handling concurrent requests, allowing the application to process multiple uploads simultaneously. Channels facilitate communication between goroutines, ensuring efficient data handling and reducing latency during file processing.
+
+---
+
 ## Middleware Used
 
 - **Rate Limiter**: Limits the number of requests to protect the API. Max 20 requests per 30 seconds.
@@ -141,8 +148,3 @@ This project is inspired by [WeTransfer](https://wetransfer.com/), offering a si
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-
-
