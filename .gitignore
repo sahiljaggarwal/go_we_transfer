@@ -1,0 +1,33 @@
+# Ignore the build artifacts
+dist/
+.env
+
+# Ignore Go module files
+*.mod
+*.sum
+
+# Ignore vendor directory (if using Go modules)
+vendor/
+
+# Ignore IDE/editor specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore operating system specific files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+
+# Ignore test coverage files
+*.cover
+*.coverage
+
+# Ignore cache files
+*.cache

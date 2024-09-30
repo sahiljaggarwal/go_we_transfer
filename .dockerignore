@@ -1,0 +1,28 @@
+# Ignore the dist directory as it contains build artifacts
+dist/
+
+# Ignore Go module files
+*.mod
+*.sum
+
+# Ignore the .git directory
+.git/
+.gitignore
+
+# Ignore any temporary files
+*.tmp
+*.log
+*.swp
+
+# Ignore IDE/editor specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore any test files
+*_test.go
+
+# Ignore system files
+.DS_Store
+Thumbs.db
